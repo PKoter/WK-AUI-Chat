@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Friend } from './friend';
-import { FRIENDS } from './mock-friends';
+import { FRIENDS } from './mock_data/mock-friends';
 
 @Injectable()
 export class FriendService {
@@ -8,5 +8,4 @@ export class FriendService {
         return Promise.resolve(FRIENDS);
     }
 
-    
 }

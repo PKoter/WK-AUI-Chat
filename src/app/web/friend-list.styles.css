@@ -29,7 +29,7 @@
 .list-friends li{
     display:block;
     clear:both;
-    padding:0.5em;
+    padding:0.2em 0.2em 0 0.2em;
     margin:0;
     font-size:120%;
     border-top: 1px solid gainsboro;
@@ -47,6 +47,12 @@
     background-color:#8a8aa0 !important;
 }
 
+li span {
+    position:relative;
+    top: -1em;
+    padding-left:0.5em;
+}
+
 .friend-online {   
     background-color:#404040;
 }
@@ -59,3 +65,10 @@
 .friend-offline.selected {
     color:#bababa;
 }
+
+img.friend-avatar {
+    width:2em;
+    height:2em;
+}
+
+

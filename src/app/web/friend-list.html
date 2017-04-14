@@ -5,6 +5,7 @@
         (click)="onSelect(friend)"
         [class.selected]="friend === selectedFriend"
         [ngClass]="(friend.online)? 'friend-online' : 'friend-offline'">
+            <img class="friend-avatar" [src]="(friend.avatar)? friend.avatar : defaultAvatarPath" alt="avtr"/>
             <span> {{friend.name}}</span>
         </li>
     </ul>

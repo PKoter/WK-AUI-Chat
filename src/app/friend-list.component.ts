@@ -10,6 +10,7 @@ import { FriendService } from './friend.service';
 
 export class FriendListComponent implements OnInit {
 
+    defaultAvatarPath : string = '/app/mock_data/_defaultavatar.jpg';
     selectedFriend : Friend;
     friends : Friend[];
     constructor(private friendService : FriendService) {}
