@@ -45,3 +45,14 @@ node_modules
 *.rar
 *.spec.ts
 *.map.ts
+#important project files
+!package.json
+!tsling.json
+!bs-config.json
+#some other important project files (dunno what they do but they sure are important)
+!systemjs.config.extras.js
+!systemjs.config.js
+!systemjs-angular-loader.js
+
+
+
