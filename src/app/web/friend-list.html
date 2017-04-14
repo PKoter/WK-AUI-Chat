@@ -1,0 +1,13 @@
+<div class="list-view">
+    <h2>Friends</h2>
+    <ul class="list-friends">
+        <li *ngFor="let friend of friends" 
+        (click)="onSelect(friend)"
+        [class.selected]="friend === selectedFriend">
+            <div [ngClass]="(friend.online)? 'friend-online' : 'friend-offline'">
+                <span>o</span> {{friend.name}}
+            </div>
+        </li>
+    </ul>
+    <friend-chat-window [friend]="selectedFriend"></friend-chat-window>
+</div>
