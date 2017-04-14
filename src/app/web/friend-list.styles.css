@@ -1,24 +1,28 @@
 .list-view {
-    top:16%;
-    left:78%;
-    float:right;
-    width:20%;
-    display:table;
+    top:5%;
+    bottom:0;
+    left:80%;
+    width:19.5%;
     color:ghostwhite;
     min-width:150px;
-    
+    position:fixed !important;
+    z-index:1;
+    background-color:#2a2a2a;
+    overflow:auto;
+    border:2px solid peachpuff;
 }
 
+.list-view, h2{
+    border-top-left-radius:12px;
+}
 .list-view h2 {
     background-color: black;
     padding:0.5em 1em;
     margin:0;
-    border-top-left-radius:10px;
 }
 
 .list-friends {
-    background-color:#2a2a2a;
-    padding-left:1em;
+    padding:0.1em;
     margin:0;
 }
 
@@ -32,30 +36,26 @@
 }
 
 .list-friends li:hover {
-    background-color:#4a4a4a;
+    background-color:#50505a;
 }
 
 .list-friends li.selected {
-    background-color:#505050;
+    background-color:#80808f !important;
 }
 
 .list-friends li.selected:hover {
-    background-color:#5a5a5a;
+    background-color:#8a8aa0 !important;
 }
 
-
-.list-friend-online{
-    background-color:green;
+.friend-online {   
+    background-color:#404040;
 }
 
-.list-friend-offline{
-    background-color:red;
+.friend-offline {
+    color:#909090;
+    background-color:#1a1a1a;
 }
 
-.friend-online span {
-    color:springgreen;
-}
-
-.friend-offline span {
-    color:red;
+.friend-offline.selected {
+    color:#bababa;
 }
