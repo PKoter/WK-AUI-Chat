@@ -2,7 +2,7 @@
     display:block;
     position:fixed;
     bottom:0.5em;
-    right:20%;
+    right:21%;
     width:16%;
 }
 
@@ -17,17 +17,15 @@ h3{
 .chat-inside {
     margin:0;
     background-color:#2a2a2a;
+    padding:0;
 }
 
-textarea{
-    margin:auto;
-    width:98%;
-    clear:both;
-    overflow:auto;
+conversation{
+    margin:0;
 }
 
 input{
     display:block;
     margin:auto;
-    width:96%;
+    width:98%;
 }

@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Friend } from './friend';
-import { FriendService } from './friend.service';
 
 @Component({
     selector: 'friend-chat-window',

@@ -3,4 +3,6 @@ export class Friend {
     online: boolean;
     name: string;
     avatar: string;
+
+    conversationLog : boolean;
 }

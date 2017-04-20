@@ -1,3 +1,4 @@
+import { ConversationContentComponent } from './conversation-content.component';
 import { NgModule }      from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,7 +10,7 @@ import { FriendChatWindowComponent } from './friend-chat-window.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, FriendListComponent, FriendChatWindowComponent ],
+  declarations: [ AppComponent, FriendListComponent, FriendChatWindowComponent, ConversationContentComponent ],
   providers:    [ FriendService ],
   bootstrap:    [ AppComponent ]
 })

@@ -2,7 +2,7 @@
     <div class="chat-window">
         <h3>{{friend.name}}</h3>
         <div class="chat-inside">
-            <textarea name="chat-messages-content" disabled>greet your friend...</textarea><br/>
+            <conversation [friend]="friend"></conversation>
             <input type="text" name="chat-input" placeholder="write..."/>
         </div>
     </div>
