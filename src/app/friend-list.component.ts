@@ -20,7 +20,12 @@ export class FriendListComponent implements OnInit {
     }
 
     onSelect(friend:Friend):void {
-        this.selectedFriend = friend;
+        if(this.selectedFriend !== friend){
+            this.selectedFriend = friend;
+        }
+        else{
+            this.selectedFriend = null;
+        }
     }
 
 }

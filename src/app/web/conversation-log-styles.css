@@ -1,5 +1,6 @@
 body{
     background-color:lightgray;
+    max-width:350px;
     margin:0;
 }
 p.system-whisper {
@@ -12,23 +13,22 @@ div{
     display:block;
     width:90%;
     clear:both;
-    padding:1%;
-    margin:0;
 }
 p.message{
     color:white;
-    
+    padding:0.5em;
+    margin:0;
 }
 .friend-messages {
     float:left;
-    border-top-right-radius: 6%;
-    border-bottom-right-radius: 6%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color:#1a1a1a;
 }
 
 .user-messages {
     float:right;
-    background-color:grey;
-    border-top-left-radius: 6%;
-    border-bottom-left-radius: 6%;
+    background-color:#4000a0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }

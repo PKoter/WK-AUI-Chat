@@ -2,21 +2,21 @@
     top:5%;
     bottom:0;
     left:80%;
-    width:19.5%;
+    width:20%;
     color:ghostwhite;
-    min-width:150px;
+    min-width:200px;
     position:fixed !important;
     z-index:1;
     background-color:#2a2a2a;
     overflow:auto;
-    border:2px solid peachpuff;
+    border:2px solid darkblue;
 }
 
-.list-view, h2{
+.list-view, h3{
     border-top-left-radius:12px;
 }
-.list-view h2 {
-    background-color: black;
+.list-view h3 {
+    background-color: #300070;
     padding:0.5em 1em;
     margin:0;
 }
@@ -48,8 +48,6 @@
 }
 
 li span {
-    position:relative;
-    top: -1em;
     padding-left:0.5em;
 }
 

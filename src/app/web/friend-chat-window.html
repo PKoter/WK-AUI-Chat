@@ -1,6 +1,15 @@
 <div *ngIf="friend">
     <div class="chat-window">
-        <h3>{{friend.name}}</h3>
+        <div class="name-bar">
+            <!-- online icon styling -->
+            <span id="online-symbol" class="glyphicon glyphicon-dashboard"
+            [style.color]="(friend.online)? 'lightgreen' : 'red'"></span>
+            <h4> {{friend.name}}</h4>
+            <!-- minimize icon will go here -->
+            <button type="button" class="close" aria-label="Close" (click)="onClose()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <div class="chat-inside">
             <conversation [friend]="friend"></conversation>
             <input type="text" name="chat-input" placeholder="write..."/>
