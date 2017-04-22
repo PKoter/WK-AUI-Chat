@@ -5,12 +5,17 @@
             <span id="online-symbol" class="glyphicon glyphicon-dashboard"
             [style.color]="(friend.online)? 'lightgreen' : 'red'"></span>
             <h4> {{friend.name}}</h4>
-            <!-- minimize icon will go here -->
+            <!-- minimize icon will go here, strange but in right order icons are reversed ._. -->
             <button type="button" class="close" aria-label="Close" (click)="onClose()">
                 <span aria-hidden="true">&times;</span>
             </button>
+             <button type="button" class="close" aria-label="Minimize" (click)="onMinimize()">
+                <span aria-hidden="true" [innerHTML]="minimizeSymbol"></span>
+            </button>
         </div>
-        <div class="chat-inside">
+        <!-- hides this part when minimized -->
+        <div [style.display]="(minimized)? 'none' : 'block'"
+            class="chat-inside">
             <conversation [friend]="friend"></conversation>
             <input type="text" name="chat-input" placeholder="write..."/>
         </div>

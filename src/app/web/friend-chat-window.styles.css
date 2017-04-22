@@ -41,11 +41,11 @@
 .name-bar button {
 	color:white;
 	opacity:.9;
+	padding:0.2em;
 }
 
 .name-bar button:hover {
 	color:lightgray;
-	opacity:.9;
 }
 
 .chat-inside {

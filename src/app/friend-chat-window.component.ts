@@ -9,6 +9,9 @@ import { Friend } from './friend';
 
 export class FriendChatWindowComponent {
 
+    minimized : boolean = false;
+
+    minimizeSymbol : string = '&dArr;';
     @Input() friend : Friend;
 
     onClose(){
@@ -16,11 +19,13 @@ export class FriendChatWindowComponent {
     }
 
     onMinimize(){
-
+        if(this.minimized == false){
+            this.minimized = true;
+            this.minimizeSymbol = '&uArr;';
+        }
+        else{
+            this.minimizeSymbol = '&dArr;';
+            this.minimized = false;
+        }
     }
-
-    onMaximize() {
-
-    }
-
 }
