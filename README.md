@@ -1,2 +1,2 @@
 # WK-AUI-Chat
-i ain't got nutin' to do, but...
+Althought I had time only to do single angular2 tutorial, I've somehow managed to encapsulate most of module's ui features. Module still lacks proper binding and ability to open many chat windows, what i'll try to cover as soon as possible ( hot time on university coming). There are possible flaws, that i wasn't able to catch, that i'd fix for the sake of experience, but sadly project will be soon migrated to main project's repo, when these changes are more likely to occur.
