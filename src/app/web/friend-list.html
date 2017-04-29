@@ -3,11 +3,10 @@
     <ul class="list-friends">
         <li *ngFor="let friend of friends" 
         (click)="onSelect(friend)"
-        [class.selected]="friend === selectedFriend"
         [ngClass]="(friend.online)? 'friend-online' : 'friend-offline'">
             <img class="friend-avatar" [src]="(friend.avatar)? friend.avatar : defaultAvatarPath" alt="avtr"/>
             <span> {{friend.name}}</span>
         </li>
     </ul>
-    <friend-chat-window [friend]="selectedFriend"></friend-chat-window>
+    <chat-window-group [chattingWith]="chattingFriends"></chat-window-group>
 </div>
