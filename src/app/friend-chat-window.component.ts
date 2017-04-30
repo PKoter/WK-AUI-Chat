@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Friend } from './friend';
 
 @Component({
@@ -13,12 +13,15 @@ export class FriendChatWindowComponent {
     minimizeSymbol : string = '&dArr;';
     @Input() friend : Friend;
 
-    onClose(){
+    @Output() onClose = new EventEmitter<Friend>();
+
+    close(){
+        this.onClose.emit(this.friend);
         this.friend = null;
     }
 
     onMinimize(){
-        if(this.minimized == false){
+        if(this.minimized === false){
             this.minimized = true;
             this.minimizeSymbol = '&uArr;';
         }

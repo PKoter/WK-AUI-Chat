@@ -6,7 +6,10 @@ import { Friend } from './friend';
     template: `
         <ul class="chat-grouper">
             <li *ngFor="let friend of chattingWith">
-                <friend-chat-window [friend]="friend"></friend-chat-window>
+                <friend-chat-window 
+                    [friend]="friend"
+                    (onClose)="onChatEnd($event)"
+                ></friend-chat-window>
             </li>
         </ul>
     `,
@@ -16,5 +19,12 @@ import { Friend } from './friend';
 export class ChatWindowGroupComponent {
     count : number;
     @Input() chattingWith : Array<Friend>;
+
+    onChatEnd(friend : Friend){
+        let index = this.chattingWith.indexOf(friend);
+        if(index >= 0){
+            this.chattingWith.splice(index, 1);
+        }
+    }
 }
 
